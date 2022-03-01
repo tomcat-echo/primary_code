@@ -1,0 +1,30 @@
+#wide {
+    width: 800px;
+    margin: 0 auto;
+    /* 让当前新闻整体div大盒子水平居中 */
+}
+
+h1 {
+    /* 要让文本在h1标签中水平居中！！！ */
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    /* 去除a标签的下划线 */
+}
+
+#header {
+    /* white-space: nowrap; */
+    color: grey;
+    text-align: center;
+}
+
+#from {
+    font-weight: 700;
+    color: skyblue;
+}
+
+.content {
+    text-indent: 2em;
+}

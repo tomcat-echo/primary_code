@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册表单</title>
+</head>
+
+<body>
+    <h1>青春不常在，抓紧谈恋爱</h1>
+    <hr>
+    <form action="form_action.asp" method="get">
+        性别：
+        <label for="man">
+        <input type="radio" name="gender" id="man" checked><img src="./images/man.jpg" alt="">
+        男</label>
+        <label><input type="radio" name="gender" id=""><img src="./images/women.jpg" alt=""> 女
+        </label>
+        <br><br> 出生年月：
+        <!-- <label for="birthday">
+        <select name="year" id="">
+            <option value="tip">请选择年</option>
+            <option value="1990">1990</option>
+            <option value="1991">1991</option>
+        </select>
+        <select name="year" id="">
+            <option value="tip">请选择月</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select> -->
+        <input type="date" name="birthday" id="birthday">
+        </label>
+        <br><br> 所在地区：
+        <label for="area">
+        <input type="text" name="area" id="area" placeholder="风斗之家">
+    </label>
+        <br><br> 婚姻状况：
+        <input type="radio" name="merrystus" id="" checked>未婚
+        <input type="radio" name="merrystus" id="">已婚
+        <input type="radio" name="merrystus" id="">保密
+        <br><br> 喜欢的类型：
+        <label for="like">
+        <input type="checkbox" name="like" id="" checked>萝莉
+        <input type="checkbox" name="like" id="" checked>御姐
+        <input type="checkbox" name="like" id="">大叔
+        <input type="checkbox" name="like" id="">奶狗
+        <input type="checkbox" name="like" id="">狼狗
+        <input type="checkbox" name="like" id="">鲜肉
+    </label>
+        <br><br> 个人介绍：
+        <br><br>
+        <textarea name="introduce" id="" cols="50" rows="10"></textarea></body>
+<br><br>
+<h3>我承诺</h3>
+<ul>
+    <li>年满18岁、单身</li>
+    <li>抱着严肃的态度</li>
+    <li>真诚寻找另一半</li>
+</ul>
+<br> 上传相关附件：
+<input type="file" name="appendix" id="" multiple>
+<br><br>
+<input type="checkbox" name="accept" id="">我同意所有条款
+<br>
+<input type="submit" value="登录">
+<button type="submit"><img src="./images/login.png" alt=""></button>
+<button type="reset">重置</button>
+</form>
+
+</html>
