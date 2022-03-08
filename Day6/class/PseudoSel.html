@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:first-child {
+            background-color: red;
+        }
+        
+        li:nth-child(2) {
+            background-color: yellow;
+        }
+        
+        li:nth-child(even) {
+            background-color: pink;
+        }
+        
+        li:nth-child(odd) {
+            background-color: #000;
+        }
+        
+        li:last-child {
+            background-color: purple;
+        }
+        
+        li:nth-last-child(1) {
+            background-color: #fff;
+        }
+        /* 第1/5/10 */
+        
+        li:nth-child(4n+1) {
+            background-color: green;
+        }
+        /* 第4/8/12 */
+        
+        li:nth-child(4n) {
+            background-color: blue;
+        }
+        /* 0+5  -1+5 -2+5 -3+5 -4+5 */
+        /* n:从0开始 */
+        
+        li:nth-child(-n+5) {
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <li>第1个li</li>
+    <li>第2个li</li>
+    <li>第3个li</li>
+    <li>第4个li</li>
+    <li>第5个li</li>
+</body>
+
+</html>

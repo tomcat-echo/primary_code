@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 41px;
+    line-height: 41px;
+    background-color: #2b303b;
+}
+
+.header h1 {
+    float: left;
+}
+
+.header li:first-child {
+    padding-left: 473px;
+}
+
+.header li a {
+    float: left;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header li span {
+    padding: 0 8px;
+}
+
+.banner {
+    height: 478px;
+    background-image: url(../images/banner.png);
+}
+
+.banner .nav {
+    height: 478px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.banner .nav .side {
+    float: left;
+    width: 254px;
+    height: 478px;
+    background-color: #1b2d3f;
+}
+
+.banner .side li {
+    padding: 0 18px;
+}
+
+.banner .side a {
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.banner .side span {
+    float: right;
+}
+
+.content {
+    margin-top: 45px;
+    height: 742px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.content .mes {
+    margin: 0 auto;
+    /* padding: 42px 54px; */
+    width: 1200px;
+    height: 458px;
+    box-shadow: 0px 2px 3px 0px rgba(88, 87, 87, 0.5);
+}
+
+.content .mes .text {
+    float: left;
+    height: 350px;
+    width: 450px;
+    padding: 42px 54px;
+}
+
+.text h4 {
+    width: 102px;
+    text-align: left;
+    font-size: 24px;
+    border-bottom: 1px solid #ccc;
+}
+
+.text .detail {
+    padding-top: 18px;
+    width: 480px;
+    text-align: justify;
+}
+
+.text .detail span {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #666;
+}
+
+.detail .study {
+    margin-top: 18px;
+    height: 50px;
+    width: 160px;
+    line-height: 50px;
+    text-align: center;
+    border: 2px solid #ffa500;
+}
+
+.study a {
+    font-size: 18px;
+    color: #1b2d3f;
+}
+
+.mes .img {
+    margin: 40px 52px 0 0;
+    float: right;
+    height: 350px;
+    width: 582px;
+    background-image: url(../images/right.png);
+    background-size: contain;
+    /* 中片铺满 */
+}
+
+.footer {
+    height: 400px;
+    background-color: #2e3033;
+}
+
+.footer .content {
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #2e3033;
+}
+
+.footer .content li {
+    padding: 12px 0;
+}
+
+.footer .content li:first-child {
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.footer .content li a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    height: 18px;
+    line-height: 18px;
+}
+
+.footer .content ul {
+    float: left;
+    padding-right: 70px;
+}
+
+.declare {
+    /* 浮动如果，左面的太宽会导致下移 padding-right: 70px; 90px就会让他下移 */
+    float: right;
+    margin: 18px 0px 0 0;
+    width: 200px;
+    color: #fff;
+}
+
+.declare p {
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+}
+
+div p:last-child {
+    padding-top: 160px;
+    background-color: #fff;
+}
+
+.declare .power {
+    margin: 40px 0 0px;
+    height: 20px;
+    text-align: left;
+    line-height: 20px;
+    font-size: 20px;
+}
+
+.declare .button {
+    margin-top: 20px;
+    width: 190px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #00d4ff;
+}
+
+.declare .button a {
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+}
