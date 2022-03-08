@@ -1,0 +1,417 @@
+/* 用来美化首页 */
+
+
+/* 版心 */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* 内减模式 */
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+
+/* 常规写法下次直接调用（类名） */
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 这里直接取图片的高度 */
+
+.header {
+    height: 42px;
+    margin: 30px auto;
+    /* 这里上下不能取0,因为上面也写了居中，这样会覆盖掉上面的margin */
+}
+
+h1 {
+    float: left;
+}
+
+.nav {
+    /* 纯文字可以不给宽度 */
+    height: 42px;
+    float: left;
+    margin-left: 70px;
+}
+
+.nav li {
+    float: left;
+    margin-right: 26px;
+}
+
+.nav li a {
+    display: inline-block;
+    /* 这里必须是0，auto会产生缩进距离的效果 */
+    padding: 0 9px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #050505;
+}
+
+.nav li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+.search {
+    float: left;
+    width: 412px;
+    height: 40px;
+    margin-left: 59px;
+    border: 1px solid #00a4ff;
+}
+
+.search input {
+    float: left;
+    /* 内部元素要小于等于父级尺寸 */
+    width: 360px;
+    /* 这里去掉border边，2px */
+    height: 38px;
+    border: 0;
+    padding-right: 20px;
+}
+
+
+/* 控制placeholder */
+
+.search input::placeholder {
+    font-style: 14px;
+    color: #bfbfbf;
+}
+
+.search button {
+    width: 50px;
+    height: 38px;
+    float: left;
+    border: 0;
+    background-image: url(../images/btn.png);
+}
+
+.user {
+    float: right;
+    /* 和下面的导航的右边距测量出来的 */
+    margin-right: 35px;
+    height: 42px;
+    line-height: 42px;
+}
+
+.user img {
+    /* 调节图片垂直对齐方式 */
+    vertical-align: middle;
+}
+
+
+/* 轮播图 */
+
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+
+.banner .wrapper {
+    height: 420px;
+    background-image: url(../images/banner2.png);
+}
+
+.banner .left {
+    float: left;
+    padding: 0 20px;
+    /* 加内边距后，不需要在去调span的padding-left，只需右浮动即可 */
+    line-height: 44px;
+    width: 190px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.banner .left span {
+    float: right;
+}
+
+.banner .left a {
+    font-style: 14px;
+    color: #fff;
+}
+
+.banner .left a:hover {
+    color: #00b4ff;
+}
+
+.banner .right {
+    float: right;
+    margin-top: 50px;
+    width: 228px;
+    height: 300px;
+    background-color: #fff;
+}
+
+.banner .right h2 {
+    height: 48px;
+    line-height: 48px;
+    background-color: #9bceea;
+    text-align: center;
+    font-style: 18px;
+    color: #fff;
+}
+
+.banner .right .content {
+    padding: 0 18px;
+}
+
+.banner .right .more {
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    margin: 4px 14px 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #00a4ff;
+    background-color: #fff;
+    border: solid 1px #00a4ff;
+}
+
+.banner .right .content dl {
+    padding: 12px 0;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.banner .right .content dt {
+    font-size: 16px;
+    color: #4e4e4e;
+}
+
+.banner .right .content dd {
+    font-size: 14px;
+    color: #4e4e4e;
+}
+
+.goods {
+    margin-top: 8px;
+    padding-left: 34px;
+    padding-right: 20px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+    box-shadow: 0px 2px 3px 0px rgba(118, 118, 118, 0.2);
+}
+
+.goods h2 {
+    float: left;
+    margin-right: 30px;
+    font-size: 16px;
+    color: #00a4ff;
+    font-weight: 400;
+}
+
+.goods ul {
+    float: left;
+}
+
+.goods ul li {
+    float: left;
+    /* margin-left: 30px; */
+}
+
+.goods ul li a {
+    padding: 0 30px;
+    font-size: 16px;
+    color: #050505;
+    border-left: 1px solid #bfbfbf;
+}
+
+.goods .interest {
+    float: right;
+    font-size: 14px;
+    color: #00a4ff;
+}
+
+
+/* 精品课程 */
+
+.recommend {
+    margin-top: 35px;
+}
+
+.recommend .title {
+    height: 40px;
+}
+
+.recommend .title h2 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+    font-weight: 400;
+}
+
+.recommend .title a {
+    float: right;
+    padding-right: 30px;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.recommend .content li {
+    float: left;
+    width: 228px;
+    height: 270px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.recommend .content li:nth-child(5n) {
+    margin-right: 0;
+}
+
+.recommend .content h3 {
+    padding: 20px;
+    font-size: 14px;
+    color: #050505;
+}
+
+.recommend .content p {
+    padding: 0 20px;
+    font-size: 12px;
+    color: #999;
+}
+
+.recommend .content span {
+    color: #ff7c2d;
+}
+
+
+/* 编程入门 */
+
+.start {
+    margin-top: 35px;
+}
+
+.start .title {
+    height: 40px;
+}
+
+.start .title h2 {
+    float: left;
+    font-size: 18px;
+    padding-right: 300px;
+    color: #494949;
+    font-weight: 400;
+}
+
+.start .title a {
+    float: left;
+    justify-content: center;
+    padding-left: 70px;
+    font-size: 16px;
+    color: #a5a5a5;
+}
+
+.start .title a:hover {
+    color: #00a4ff;
+}
+
+.start .title a:last-child {
+    float: right;
+    padding-right: 30px;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.start .content .left img {
+    float: left;
+    width: 220px;
+    height: 390px;
+}
+
+.start .content .right {
+    float: right;
+}
+
+.start .content .right li {
+    float: left;
+    padding-top: 18px;
+    padding-right: 15px;
+}
+
+
+/* 版权 */
+
+.footer {
+    margin-top: 40px;
+    padding-top: 30px;
+    height: 200px;
+    background-color: #fff;
+}
+
+.footer .left {
+    float: left;
+}
+
+.footer .left p {
+    margin: 20px 0 10px;
+    font-size: 12px;
+    color: #666;
+}
+
+.footer .right {
+    float: right;
+}
+
+.footer img {
+    padding: ;
+}
+
+.footer .left a {
+    display: block;
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #666;
+    border: 1px solid #00a4ff;
+}
+
+.footer .right dl {
+    float: left;
+    margin-left: 120px;
+}
+
+.footer .right dt {
+    padding-bottom: 5px;
+}
+
+.footer .right a {
+    width: 79px;
+    height: 17px;
+    font-size: 12px;
+    line-height: 21px;
+    color: #666;
+}
