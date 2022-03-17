@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .banner {
+            position: relative;
+            width: 1226px;
+            height: 600px;
+            overflow: hidden;
+        }
+        
+        .mask {
+            position: absolute;
+            bottom: 0;
+            height: 150px;
+            width: 1226px;
+            /* 这里由于绝对定位导致，他变成行内块，所以必须加宽 */
+            background-color: rgba(0, 0, 0, .5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <img src="./images/bg.jpg" alt="">
+        <div class="mask"></div>
+    </div>
+</body>
+
+</html>
