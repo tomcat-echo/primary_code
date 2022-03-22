@@ -1,0 +1,152 @@
+@import url(./base.less);
+@vwSize:3.75vw;
+@pinkColor:#fb7299;
+// 头部
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    // 防止内容压图片
+    z-index: 1;
+    width: 100%;
+    // widtH:110vw
+    height: (84/@vwSize);
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: (44/@vwSize);
+    padding-left:  (18/@vwSize);
+    padding-right:(12/@vwSize);
+    .left{
+         .iconfont{
+            font-size: (28/@vwSize);
+            color: @pinkColor;
+        }
+    }
+
+    .right{
+        display: flex;
+    //  icon自己有大小，直接给类加比较好
+        .iconfont{
+            font-size: (22/@vwSize);
+            color: #ccc;
+        }
+        .login,.download{
+            height: (24/@vwSize);
+            margin-left: (24/@vwSize);
+        }
+        .login{
+            width: (24/@vwSize);
+        }
+        .download{
+            width: (72/@vwSize);
+        }
+    }
+   
+}
+    .bottom{
+        display: flex;
+        height: (40/@vwSize);
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+        justify-content: space-between;
+       
+        .tab{
+            ul{
+                display: flex;
+                li{
+                    padding:0 (16/@vwSize);
+                    
+                    a{
+                        display: block;
+                        height: (38/@vwSize);
+                        line-height: (38/@vwSize);
+                        font-size: (14/@vwSize);
+                    
+                        &.current{
+                            border-bottom: 2px solid @pinkColor;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .more{
+
+            a{
+                display: block;
+                line-height:(40/@vwSize) ;
+                text-align: center;
+                width: (40/@vwSize);
+                height: (40/@vwSize);
+                
+                .iconfont{
+                    font-size: (22/@vwSize);
+                }
+            }
+
+          
+            
+        }
+    }
+
+}
+// 标准流会在左上角开始
+.video_content{
+    padding: (84/@vwSize) (5/@vwSize) 0;
+    .video_list{
+        display: flex;
+        flex-wrap: wrap;
+        a{
+            padding: (8/@vwSize) (5/@vwSize);
+            width: 50%;
+            font-size: (12/@vwSize);
+
+        }
+
+        .pic{
+            position: relative;
+            .count{
+                display: flex;
+                justify-content: space-between;
+                position: absolute;
+                padding: (8/@vwSize);
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));            
+                width: 100%;
+                // 这里加宽才能撑开盒子
+                left: 0;
+                bottom: 0;
+                color: #fff;
+            i{
+                vertical-align: middle;
+            }
+            }
+        }
+
+        .txt{
+            margin-top: (5/@vwSize);
+        }
+    }
+}
+
+
+footer{
+    position: fixed;
+    margin: (12/@vwSize) ;
+    margin-bottom: (30/@vwSize);
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: (350/@vwSize);
+    height: (30/@vwSize);
+    line-height: (30/@vwSize);
+    background-color: @pinkColor;
+    border-radius: 25px;
+    color: #fff;
+    text-align: center;
+    i{
+        padding-right: (8/@vwSize);
+        vertical-align: middle;
+    }
+}
