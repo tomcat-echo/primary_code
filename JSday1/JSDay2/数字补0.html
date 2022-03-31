@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    数字补0案例 需求：用户输入1个数，如果数字小于10，则前面进行补0， 比如 09 03 等 分析： ①：为后期页面显示时间做铺垫 ②：利用三元运算符 补 0 计算
+    <script>
+        let num = prompt("请输入一个数字：")
+        num = num < 10 ? '0' + num : num
+        console.log(num);
+    </script>
+</body>
+
+</html>

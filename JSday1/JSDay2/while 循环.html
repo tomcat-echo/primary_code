@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    需求：使用while循环，页面中打印，可以添加换行效果
+    <!-- <script>
+        let i = 0
+        while (i < 10) {
+            console.log("月薪十万")
+            console.log("\n");
+            i++
+        }
+    </script> -->
+
+    1. 页面输出1-100  核心思路： 利用 i ,因为正好和 数字对应 2. 计算从1加到100的总和并输出  核心思路：  声明累加和的变量 sum  每次把 i 加到 sum 里面 3. 计算1-100之间的所有偶数和  核心思路：  声明累加和的变量 sum  首先利用if语句把 i 里面是偶数筛选出来  把 筛选的 i 加到 sum 里面
+
+    <script>
+        let i = 1
+        let sum = 0,
+            evenSum = 0
+        while (i <= 100) {
+            sum += i
+            if (i % 2 === 0) {
+                evenSum += i
+            }
+            i++
+        }
+        console.log("1-100的和：" + sum)
+        console.log("1-100中偶数的和：" + evenSum)
+    </script>
+
+</body>
+
+</html>

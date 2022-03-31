@@ -1,0 +1,87 @@
+.navbar-default {
+  background-color: transparent;
+  border: 0;
+}
+.navbar-default .navbar-header a img {
+  vertical-align: middle;
+}
+.navbar-default .collapse {
+  margin-top: 15px;
+}
+.navbar-default .navbar-nav li a {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffffa6;
+}
+.navbar-default a.hot:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  left: -2px;
+  width: 13px;
+  height: 15px;
+  background: url(http://cdn.alloyteam.com/assets/img/hot-32d141.png) 50% no-repeat;
+  background-size: 100% 100%;
+}
+.navbar-default .hot {
+  background-image: -webkit-linear-gradient(left, #cddc39, #ff9800 25%, #cddc39 50%, #ff9800 75%, #cddc39) !important;
+  -webkit-text-fill-color: transparent!important;
+  -webkit-background-clip: text!important;
+  -webkit-background-size: 200% 100%!important;
+  -webkit-animation: masked-animation 2s infinite linear !important;
+}
+.navbar-default .navbar-nav a.active {
+  color: #f2b535;
+}
+.carousel img {
+  height: 100%!important;
+}
+@media (max-width: 992px) {
+  .carousel .item {
+    height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel .item {
+    height: 250px;
+  }
+}
+@media (min-width: 992px) {
+  .carousel .item {
+    height: 500px;
+  }
+}
+.content {
+  padding-bottom: 30px;
+  text-align: center;
+}
+.content div .i-art-wrap {
+  padding: 20px 10px;
+}
+.content div .i-art-wrap .i-ad-img {
+  height: 60px;
+  overflow: hidden;
+  display: inline-block;
+}
+.content div .i-art-wrap .i-ad-img img {
+  height: 100%;
+}
+.content div .art1 {
+  background-color: #70c3ff !important;
+}
+.content div .art2 {
+  background-color: #fd6a7f !important;
+}
+.content div .art3 {
+  background-color: #7f8ea0 !important;
+}
+.content div .art4 {
+  background-color: #89d04f !important;
+}
+.content div a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
