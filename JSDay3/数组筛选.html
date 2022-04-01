@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>需求：将数组 [2, 0, 6, 1, 77, 0, 52, 0, 25, 7] 中大于等于 10 的元素选出来，放入新数组</p>
+    <p>分析： ①：声明一个新的数组用于存放新数据newArr ②：遍历原来的旧数组， 找出大于等于 10 的元素 ③：依次追加给新数组 newArr</p>
+    <script>
+        let arr = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7]
+        let newArr = []
+        for (let i = 0, j = 0; i < arr.length; i++) {
+            if (arr[i] >= 10) {
+                // newArr[j++] = arr[i]  
+                // newArr = arr[i] 这里newArr被看成变量
+                newArr.push(arr[i])
+            }
+
+        }
+        document.write(`筛选的数字为：${newArr}`)
+    </script>
+</body>
+
+</html>
