@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function add(num1, num2) {
+            num1 = num1 || 0
+            num2 = num2 || 0
+            return num1 + num2
+
+        }
+
+        function hundred(start, end) {
+            let params = 0
+            for (let i = start; i <= end; i++) {
+                params += i
+            }
+            return params
+        }
+        let sum = add()
+        document.write(`两数之和为：${sum}<br>`)
+        sum = hundred(1, 100)
+        document.write(`1-100之和为：${sum}`)
+    </script>
+</body>
+
+</html>

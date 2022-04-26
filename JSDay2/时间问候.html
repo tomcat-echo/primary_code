@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    12 点以前， 输出上午好 18 点以前， 输出下午好 20 点以前， 输出晚上好
+    <script>
+        let hour = prompt("请输入当前的整点数：")
+        if (hour > 0 && hour < 12) {
+            console.log("上午好！")
+        } else if (hour < 18) {
+            console.log("下午好！")
+        } else if (hour < 20) {
+            console.log("晚上好！")
+        } else {
+            console.log("好好休息！");
+        }
+    </script>
+</body>
+
+</html>

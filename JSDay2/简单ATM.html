@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    简易ATM取款机案例 需求：用户可以选择存钱、取钱、查看余额和退出功能 分析： ①：循环的时候，需要反复提示输入框，所以提示框写到循环里面 ②：退出的条件是用户输入了 4，如果是4，则结束循环，不在弹窗 ③：提前准备一个金额预先存储一个数额 ④：取钱则是减法操作， 存钱则是加法操作，查看余额则是直接显示金额 ⑤：输入不同的值，可以使用switch来执行不同的操作
+
+    <script>
+        let amount = 1000
+
+        function atm() {
+            let opt = prompt(`请选择您的的操作：
+    1、取款
+    2、存款
+    3、查看余额
+    4、退出
+    `)
+            switch (opt) {
+                case '1':
+                    amount -= prompt('请输入您想取的金额：')
+                    atm()
+                    break
+                case '2':
+                    amount += +prompt('请输入您想存入的金额：')
+                    atm()
+                    break
+                case '3':
+                    alert(`您卡内的余额为：${amount}`)
+                    atm()
+                    break
+                case '4':
+                    break
+                default:
+                    alert('您输入的操作有误,请重新输入：')
+                    atm()
+
+            }
+
+        }
+        atm()
+    </script>
+</body>
+
+</html>

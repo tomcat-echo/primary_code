@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = prompt("请输入你想测试的数据：")
+            // 如果用户没有输入，即''，则当false看待
+        num = num || 0
+        if ((Number(num) % 4 === 0) && (Number(num) % 100 === 0)) {
+            console.log("能被4整除，也能被100整除");
+        } else {
+            console.log("能被4整除，但不能被100整除");
+
+        }
+    </script>
+</body>
+
+</html>

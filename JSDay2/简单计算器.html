@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    需求：用户输入2个数字，然后输入 + - * / 任何一个，可以计算结果
+    <script>
+        let num1 = prompt("请输入第一个数字：")
+        let num2 = prompt("请输入第二个数字：")
+        let opt = prompt("请输入运算符：（+ - * /）")
+        switch (opt) {
+            case '+':
+                num1 = Number(num1) + Number(num2)
+                break
+            case '-':
+                num1 -= num2
+                break
+
+            case '*':
+                num1 *= num2
+                break
+            case '/':
+                num1 /= num2
+                break
+            default:
+                console.log('输入表达式错误！')
+                break
+        }
+        console.log(`表达式结果是${num1}`);
+    </script>
+</body>
+
+</html>
